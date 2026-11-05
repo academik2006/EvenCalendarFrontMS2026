@@ -301,12 +301,12 @@ document.getElementById("return-game-button").addEventListener("click", function
     document.getElementById('card-number-id').innerHTML = index + 1;
     document.getElementById('congratulation-text').innerHTML = selectedCard.text;
     
-    let cardConditionText = selectedCardPromotion.сondition.split('.')[0].trim(); // получаем первое предложение    
+    let cardConditionText = selectedCardPromotion.condition.split('.')[0].trim(); // получаем первое предложение    
     document.getElementById('card-name').innerHTML = `${cardConditionText}.`;
-    document.getElementById('condition-full-text-id').innerHTML = `*${selectedCardPromotion.сondition}`;
+    document.getElementById('condition-full-text-id').innerHTML = `*${selectedCardPromotion.condition}`;
     
     currentCardIndex = index + 1;
-}
+    }
 
 
     function hideDialog() {        
